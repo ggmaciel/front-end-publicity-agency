@@ -1,38 +1,1284 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.router-link {
+    text-decoration: none;
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* HOMEPAGE
+////////////////////////////////////////////////////////////////////
+*/
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: rgb(204, 204, 204);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home-page-top-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(top-landing-page-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
 }
 
-.App-link {
-  color: #61dafb;
+.home-page-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-page-logo {
+    margin-top: 20px;
 }
+
+.home-page-links {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+
+.home-page-trabalhos-link {
+    display: none;
+    cursor: pointer;
+}
+
+.home-page-contato-link {
+    display: none;
+    cursor: pointer;
+}
+
+.home-page-sobre-link {
+    margin-left: 30px;
+    font-size: 15pt;
+}
+
+.home-page-logo-text {
+    display: flex;
+    padding: 30px;
+    margin-top: 70px;
+    font-family: "Montserrat", sans-serif;
+    opacity: 0;
+    transform: translateY(-10%);
+}
+
+.home-page-davia {
+    color: #fff98c;
+}
+
+.home-page-brigade {
+    color: #ff304f;
+}
+
+.home-page-absolute-agencia {
+    display: flex;
+    flex-direction: column;
+    font-size: 8pt;
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(
+        191deg,
+        rgba(255, 48, 79, 1) 0%,
+        rgba(255, 166, 102, 1) 100%
+    );
+    padding: 10px;
+    padding-left: 20px;
+    line-height: 5px;
+    border: none;
+    opacity: 0;
+    transform: translateX(-90%);
+}
+
+.home-page-serviços-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 8pt;
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(
+        191deg,
+        rgba(255, 48, 79, 1) 0%,
+        rgba(255, 166, 102, 1) 100%
+    );
+    padding: 10px;
+    padding-right: 15px;
+    line-height: 15px;
+    text-align: right;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.pivo-link {
+    display: flex;
+    justify-content: center;
+    background: url(pivo-image-320.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+.pivo-link:hover {
+    background: url(pivo-image-320h.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    transition: 0.6s;
+}
+
+.pivo-link-text {
+    text-align: center;
+    color: #ff8d1c;
+    font-family: "Signika", sans-serif;
+    margin-top: 130px;
+    margin-right: 20px;
+    line-height: 10px;
+}
+
+.hawea-link {
+    display: flex;
+    justify-content: center;
+    background: url(hawea-image-320.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+.hawea-link:hover {
+    background: url(hawea-image-320h.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    transition: 0.6s;
+}
+
+.hawea-link-text {
+    font-family: "Mulish", sans-serif;
+    margin-top: 240px;
+}
+
+.virginia-link {
+    display: flex;
+    justify-content: center;
+    background: url(virginia-image-320.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+.virginia-link:hover {
+    background: url(virginia-image-320h.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    transition: 0.6s;
+}
+
+.virginia-link-text {
+    font-family: "Markazi Text", serif;
+    margin-right: 100px;
+    margin-top: -30px;
+    color: #50571b;
+    font-size: 22pt;
+}
+
+.home-page-contato-container {
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.home-page-contato {
+    color: #0f0f0f;
+    font-size: 15pt;
+}
+
+.home-page-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    margin-top: 50px;
+}
+
+.home-page-form > input {
+    font-family: "Montserrat", sans-serif;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    padding: 10px;
+    margin: 5px;
+    font-size: 15pt;
+    background-color: #ff304f;
+}
+
+.home-page-form > textarea {
+    border: none;
+    outline: none;
+    background-color: #ff304f;
+    padding: 40px;
+    margin: 10px;
+    margin-right: 20px;
+    border-radius: 0.3rem;
+}
+
+.home-page-form-btn {
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background-color: #ff304f;
+    padding: 12px;
+    width: 130px;
+    margin-left: 10px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.home-page-form-btn:hover {
+    background-color: #c70f2a;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon:hover {
+    fill: rgb(218, 17, 43);
+}
+
+.social-icons > a {
+    margin-right: 15px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    color: #2c2c2c;
+    font-size: 9pt;
+    font-family: "Montserrat", sans-serif;
+    margin: 8px;
+}
+
+@media only screen and (min-width: 491px) and (max-width: 767px) {
+    .home-page-logo {
+        margin-top: 20px;
+        margin-right: 160px;
+    }
+
+    .home-page-logo-text {
+        display: flex;
+        padding: 30px;
+        margin-top: 70px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18pt;
+    }
+
+    .home-page-absolute-agencia {
+        display: flex;
+        flex-direction: column;
+        font-size: 10pt;
+        font-family: "Montserrat", sans-serif;
+        background: linear-gradient(
+            191deg,
+            rgba(255, 48, 79, 1) 0%,
+            rgba(255, 166, 102, 1) 100%
+        );
+        padding: 10px;
+        padding-left: 25px;
+
+        line-height: 5px;
+    }
+
+    .home-page-serviços-container {
+        display: flex;
+        flex-direction: column;
+        font-size: 10pt;
+        font-family: "Montserrat", sans-serif;
+        background: linear-gradient(
+            191deg,
+            rgba(255, 48, 79, 1) 0%,
+            rgba(255, 166, 102, 1) 100%
+        );
+        padding: 10px;
+        padding-right: 30px;
+        line-height: 15px;
+        text-align: right;
+    }
+
+    .pivo-link:hover {
+        background: url(pivo-image-320h.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        transition: 0.6s;
+    }
+
+    .pivo-link-text {
+        text-align: center;
+        color: #ff8d1c;
+        font-family: "Signika", sans-serif;
+        margin-top: 130px;
+        margin-right: 150px;
+        line-height: 10px;
+    }
+
+    .hawea-link:hover {
+        background: url(hawea-image-320h.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        transition: 0.6s;
+    }
+
+    .virginia-link:hover {
+        background: url(virginia-image-320h.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        transition: 0.6s;
+    }
+
+    .home-page-form > textarea {
+        border: none;
+        outline: none;
+        background-color: #ff304f;
+        padding: 60px;
+        margin: 8px;
+        margin-right: 100px;
+        border-radius: 0.3rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .home-page-logo {
+        margin-top: 20px;
+        margin-right: 230px;
+    }
+
+    .home-page-trabalhos-link {
+        display: inline;
+        font-size: 15pt;
+    }
+
+    .home-page-contato-link {
+        display: inline;
+        margin-left: 30px;
+        font-size: 15pt;
+    }
+
+    .home-page-logo-text {
+        display: flex;
+        padding: 30px;
+        margin-top: 70px;
+        font-size: 22pt;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .home-page-absolute-agencia {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        font-size: 13pt;
+        top: 40%;
+        font-family: "Montserrat", sans-serif;
+        background: linear-gradient(
+            191deg,
+            rgba(255, 48, 79, 1) 0%,
+            rgba(255, 166, 102, 1) 100%
+        );
+        padding: 40px;
+        padding-left: 30px;
+        line-height: 5px;
+    }
+
+    .home-page-serviços-container {
+        display: flex;
+        flex-direction: column;
+        font-size: 12pt;
+        font-family: "Montserrat", sans-serif;
+        background: linear-gradient(
+            191deg,
+            rgba(255, 48, 79, 1) 0%,
+            rgba(255, 166, 102, 1) 100%
+        );
+        padding: 10px;
+        padding-right: 40px;
+        padding-left: 40px;
+        line-height: 25px;
+        text-align: right;
+        margin: 30px;
+        width: 250px;
+        margin-left: 420px;
+        opacity: 0;
+        transform: translateX(5%);
+    }
+
+    .pivo-link {
+        display: flex;
+        justify-content: center;
+        background: url(pivo-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+    }
+
+    .pivo-link:hover {
+        background: url(pivo-image2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        transition: 0.6s;
+    }
+
+    .pivo-link-text {
+        text-align: center;
+        color: #ff8d1c;
+        font-family: "Signika", sans-serif;
+        margin-top: 130px;
+        margin-right: 150px;
+        line-height: 10px;
+    }
+
+    .hawea-link {
+        display: flex;
+        justify-content: center;
+        background: url(hawea-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+    }
+
+    .hawea-link:hover {
+        background: url(hawea-image2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        transition: 0.6s;
+    }
+
+    .virginia-link {
+        display: flex;
+        justify-content: center;
+        background: url(virginia-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+    }
+
+    .virginia-link:hover {
+        background: url(virginia-image2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        transition: 0.6s;
+    }
+
+    .home-page-contato {
+        color: #0f0f0f;
+        font-size: 15pt;
+        margin: 30px;
+    }
+
+    .home-page-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1px;
+        margin-top: 50px;
+    }
+
+    .home-page-form > input {
+        font-family: "Montserrat", sans-serif;
+        width: 250px;
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        padding: 10px;
+        margin: 5px;
+        font-size: 15pt;
+        background-color: #ff304f;
+    }
+
+    .home-page-form > textarea {
+        border: none;
+        outline: none;
+        background-color: #ff304f;
+        padding: 60px;
+        width: 300px;
+        margin: 8px;
+        margin-right: 1px;
+        border-radius: 0.3rem;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    .home-page-top-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(top-landing-page-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+    }
+
+    .home-page-logo {
+        margin-top: 30px;
+        margin-right: 530px;
+    }
+
+    .home-page-sobre-link {
+        margin-left: 30px;
+        font-size: 15pt;
+    }
+
+    .home-page-trabalhos-link {
+        display: inline;
+        font-size: 15pt;
+    }
+
+    .home-page-contato-link {
+        display: inline;
+        margin-left: 30px;
+
+        font-size: 15pt;
+    }
+
+    .home-page-logo-text {
+        display: flex;
+        padding: 30px;
+        margin-top: 70px;
+        font-size: 22pt;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .home-page-absolute-agencia {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        font-size: 15pt;
+        top: 50%;
+        font-family: "Montserrat", sans-serif;
+        background: linear-gradient(
+            191deg,
+            rgba(255, 48, 79, 1) 0%,
+            rgba(255, 166, 102, 1) 100%
+        );
+        padding: 40px;
+        padding-left: 25px;
+        line-height: 5px;
+        opacity: 0;
+        transform: translateX(-90%);
+        z-index: 1;
+    }
+
+    .home-page-serviços-container {
+        display: flex;
+        flex-direction: column;
+        font-size: 13pt;
+        font-family: "Montserrat", sans-serif;
+        background: linear-gradient(
+            191deg,
+            rgba(255, 48, 79, 1) 0%,
+            rgba(255, 166, 102, 1) 100%
+        );
+        background-color: white;
+        line-height: 30px;
+        padding-right: 50px;
+        margin: 50px;
+        margin-left: 100px;
+        text-align: right;
+        width: 80%;
+        opacity: 0;
+        transform: translateX(6%);
+    }
+
+    .pivo-link {
+        display: flex;
+        justify-content: center;
+        background: url(pivo-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+    }
+
+    .pivo-link:hover {
+        background: url(pivo-image2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+        transition: 0.6s;
+    }
+
+    .pivo-link-text {
+        text-align: center;
+        color: #ff8d1c;
+        font-family: "Signika", sans-serif;
+        margin-top: 250px;
+        margin-right: 250px;
+        line-height: 10px;
+        font-size: 18pt;
+    }
+
+    .hawea-link {
+        display: flex;
+        justify-content: center;
+        background: url(hawea-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+    }
+
+    .hawea-link:hover {
+        background: url(hawea-image2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+        transition: 0.6s;
+    }
+
+    .hawea-link-text {
+        font-family: "Mulish", sans-serif;
+        margin-top: 360px;
+        font-size: 18pt;
+    }
+
+    .virginia-link {
+        display: flex;
+        justify-content: center;
+        background: url(virginia-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+    }
+
+    .virginia-link:hover {
+        background: url(virginia-image2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+        transition: 0.6s;
+    }
+
+    .virginia-link-text {
+        font-family: "Markazi Text", serif;
+        margin-right: 100px;
+        margin-top: -10px;
+        color: #50571b;
+        font-size: 25pt;
+    }
+
+    .home-page-contato {
+        color: #0f0f0f;
+        font-size: 15pt;
+        margin: 30px;
+    }
+
+    .home-page-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1px;
+        margin-top: 50px;
+    }
+
+    .home-page-form > input {
+        font-family: "Montserrat", sans-serif;
+        width: 350px;
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        padding: 10px;
+        margin: 5px;
+        font-size: 15pt;
+        background-color: #ff304f;
+    }
+
+    .home-page-form > textarea {
+        border: none;
+        outline: none;
+        background-color: #ff304f;
+        padding: 60px;
+        width: 500px;
+        margin: 8px;
+        margin-right: 1px;
+        border-radius: 0.3rem;
+    }
+}
+
+/* SOBRE
+////////////////////////////////////////////////////////////////////
+*/
+
+.sobre-navbar {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+.sobre-title {
+    display: flex;
+    align-items: center;
+    background: url(sobre-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    text-align: center;
+    padding: 8px;
+}
+
+.sobre-title-text {
+    margin-top: 180px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 25px;
+    font-size: 13pt;
+    word-spacing: 7px;
+}
+
+.sobre-offer > h1 {
+    text-align: center;
+    color: #ff304f;
+    background-color: #fff98c;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18pt;
+    padding: 10px;
+}
+
+.sobre-offer-cols {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14pt;
+    display: flex;
+    justify-content: center;
+    background-color: #fff98c;
+    text-align: center;
+    color: #202020;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 732px) {
+    .sobre-title-text {
+        font-size: 15pt;
+        line-height: 30px;
+    }
+
+    .sobre-offer > h1 {
+        font-size: 25pt;
+        padding: 20px;
+    }
+
+    .sobre-offer-cols {
+        font-size: 18pt;
+    }
+} /* SMARTPHONES LANDSCAPE */
+
+@media only screen and (min-width: 733px) {
+    .sobre-title {
+        background: url(sobre-image-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sobre-title {
+        padding: 20px;
+    }
+
+    .sobre-title-text {
+        font-size: 18pt;
+        line-height: 35px;
+    }
+    .sobre-offer > h1 {
+        margin-top: 40px;
+        font-size: 28pt;
+        margin-right: 30px;
+        margin-left: 30px;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+    }
+
+    .sobre-offer-cols {
+        font-size: 20pt;
+        margin-right: 30px;
+        margin-left: 30px;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+    }
+
+    .sobre-design {
+        margin-right: 80px;
+    }
+
+    .sobre-conteudo {
+        margin-right: 80px;
+    }
+} /* TABLETS PORTRAIT */
+
+@media only screen and (min-width: 1300px) {
+    .sobre-title {
+        padding: 40px;
+    }
+    .sobre-title-text {
+        font-size: 23pt;
+        line-height: 50px;
+    }
+
+    .sobre-design {
+        margin-right: 220px;
+    }
+
+    .sobre-conteudo {
+        margin-right: 220px;
+    }
+} /* DESKTOP */
+
+/* PIVO
+////////////////////////////////////////////////////////////////////
+*/
+
+.pivo-page-image {
+    display: flex;
+    justify-content: center;
+    background: url(pivo-image-320.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.pivo-page-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #202020;
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 30px;
+}
+
+.pivo-instagram {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #202020;
+    font-family: "Mulish", sans-serif;
+}
+
+.pivo-videos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #202020;
+    font-family: "Mulish", sans-serif;
+}
+
+.instagram-pivo {
+    height: 500px;
+}
+
+.videos-pivo {
+    height: 350px;
+}
+
+@media only screen and (min-width: 450px) {
+    .pivo-page-image {
+        height: 60vh;
+    }
+
+    .pivo-instagram {
+        justify-content: center;
+        flex-direction: row;
+        margin: 30px;
+    }
+
+    .pivo-instagram > h3 {
+        font-size: 18pt;
+        margin-left: 30px;
+    }
+
+    .videos-pivo {
+        height: 520px;
+    }
+
+    .pivo-videos > h3 {
+        font-size: 18pt;
+    }
+} /* SMARTPHONES LANDSCAPE */
+
+@media only screen and (min-width: 780px) {
+    .pivo-page-title {
+        font-size: 15pt;
+    }
+    .pivo-page-image {
+        background: url(pivo-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .instagram-pivo {
+        height: 700px;
+    }
+
+    .pivo-instagram {
+        margin-bottom: 50px;
+    }
+
+    .pivo-instagram > h3 {
+        font-size: 20pt;
+        margin-left: 150px;
+    }
+
+    .videos-pivo {
+        height: 820px;
+    }
+
+    .pivo-videos > h3 {
+        font-size: 20pt;
+    }
+} /* SMARTPHONES LANDSCAPE */
+
+@media only screen and (min-width: 1120px) {
+    .pivo-page-title {
+        font-size: 20pt;
+        padding: 10px;
+    }
+
+    .instagram-pivo {
+        height: 100%;
+    }
+
+    .pivo-instagram > h3 {
+        font-size: 25pt;
+        margin-left: 250px;
+    }
+
+    .videos-pivo {
+        height: 1100px;
+    }
+
+    .pivo-videos > h3 {
+        font-size: 25pt;
+    }
+} /* DESKTOP */
+
+/* HAWEA
+////////////////////////////////////////////////////////////////////
+*/
+
+.hawea-page-image {
+    display: flex;
+    justify-content: center;
+    background: url(hawea-image-320.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.hawea-page-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #202020;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12pt;
+    padding-right: 55px;
+    padding-left: 55px;
+}
+
+.hawea-page-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #202020;
+    font-family: "Mulish", sans-serif;
+
+    margin-top: 30px;
+}
+
+.hawea-logo {
+    height: 120px;
+}
+
+.hawea-page-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #202020;
+    font-family: "Mulish", sans-serif;
+    margin-top: 50px;
+}
+
+.hawea-site {
+    height: 120px;
+}
+
+.hawea-page-site-mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #202020;
+    font-family: "Mulish", sans-serif;
+    font-weight: 200;
+    margin-top: 50px;
+}
+
+.hawea-site-mobile {
+    height: 580px;
+}
+
+.hawea-page-site-mobile > h3 {
+    margin-top: -10px;
+}
+
+@media only screen and (min-width: 490px) {
+    .hawea-page-image {
+        display: flex;
+        justify-content: center;
+        background: url(hawea-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+    }
+    .hawea-page-image {
+        height: 60vh;
+    }
+
+    .hawea-page-logo {
+        font-size: 18pt;
+    }
+
+    .hawea-page-site {
+        font-size: 18pt;
+    }
+
+    .hawea-site {
+        height: 200px;
+    }
+
+    .hawea-site-mobile {
+        height: 700px;
+    }
+
+    .hawea-page-site-mobile {
+        font-size: 18pt;
+    }
+} /* SMARTPHONES LANDSCAPE */
+
+@media only screen and (min-width: 731px) {
+    .hawea-page-image {
+        height: 70vh;
+    }
+    .hawea-page-logo {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-right: 170px;
+    }
+
+    .hawea-page-title {
+        font-size: 18pt;
+        padding-right: 85px;
+        padding-left: 85px;
+    }
+
+    .hawea-page-logo > h3 {
+        margin-left: 100px;
+    }
+
+    .hawea-logo {
+        height: 100%;
+    }
+
+    .hawea-site {
+        height: 260px;
+        margin-top: 80px;
+    }
+
+    .hawea-site-mobile {
+        height: 900px;
+    }
+} /* TABLETS PORTRAIT */
+
+@media only screen and (min-width: 992px) {
+    .hawea-page-logo {
+        margin-right: 520px;
+    }
+
+    .hawea-site {
+        height: 420px;
+    }
+} /* TABLET LANDSCAPE  */
+
+@media only screen and (min-width: 1300px) {
+    .hawea-site {
+        height: 550px;
+    }
+
+    .hawea-page-site > h3 {
+        font-size: 35pt;
+    }
+
+    .hawea-page-site-mobile {
+        flex-direction: row;
+        margin: 20px;
+    }
+
+    .hawea-site-mobile {
+        height: 100%;
+    }
+
+    .hawea-page-site-mobile > h3 {
+        font-size: 35pt;
+        margin-left: 200px;
+    }
+} /* DESKTOP */
+
+/* VIRGINIA
+////////////////////////////////////////////////////////////////////
+*/
+
+.virginia-page-image {
+    display: flex;
+    justify-content: center;
+    background: url(virginia-image-320.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.virginia-page-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #202020;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12pt;
+    padding: 20px;
+}
+
+.virginia-page-instagram {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.instagram-virginia {
+    height: 220px;
+}
+
+.virginia-page-app {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #202020;
+    font-family: "Mulish", sans-serif;
+    margin-top: 50px;
+}
+
+.app-virginia {
+    height: 600px;
+}
+
+@media only screen and (min-width: 480px) {
+    .instagram-virginia {
+        height: 340px;
+    }
+
+    .virginia-page-app {
+        margin-top: 100px;
+        font-size: 15pt;
+    }
+
+    .app-virginia {
+        height: 700px;
+    }
+} /* SMARTPHONES LANDSCAPE */
+
+@media only screen and (min-width: 721px) {
+    .virginia-page-image {
+        background: url(virginia-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+    }
+    .instagram-virginia {
+        height: 500px;
+    }
+
+    .virginia-page-title {
+        font-size: 15pt;
+        padding: 30px;
+    }
+} /* TABLETS PORTRAIT */
+
+@media only screen and (min-width: 992px) {
+    .instagram-virginia {
+        height: 700px;
+    }
+
+    .virginia-page-app {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        font-size: 20pt;
+        margin-left: 100px;
+    }
+} /* TABLET LANDSCAPE */
+
+@media only screen and (min-width: 1300px) {
+    .instagram-virginia {
+        height: 940px;
+    }
+
+    .app-virginia {
+        height: 900px;
+    }
+
+    .virginia-page-title {
+        font-size: 18pt;
+        padding: 40px;
+    }
+} /* DESKTOP */
+
+/* DEFAULT
+////////////////////////////////////////////////////////////////////
+*/
+.default {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17pt;
+    transform: translateY(100%);
+    background-color: rgba(0, 0, 0, 0.239);
+}
+
+.default > h1 {
+    margin: 0;
+}
+
+@media only screen and (min-width: 480px) {
+    .default {
+        font-size: 27pt;
+        transform: translateY(60%);
+    }
+} /* SMARTPHONES LANDSCAPE */
+
+@media only screen and (min-width: 1080px) {
+    .default {
+        font-size: 35pt;
+        transform: translateY(55%);
+    }
+} /* Desktop */
