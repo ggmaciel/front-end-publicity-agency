@@ -127,11 +127,8 @@ body {
 }
 
 .pivo-link:hover {
-    background: url(pivo-image-320h.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
     transition: 0.6s;
+    opacity: 0.8;
 }
 
 .pivo-link-text {
@@ -153,11 +150,8 @@ body {
 }
 
 .hawea-link:hover {
-    background: url(hawea-image-320h.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
     transition: 0.6s;
+    opacity: 0.9;
 }
 
 .hawea-link-text {
@@ -175,11 +169,8 @@ body {
 }
 
 .virginia-link:hover {
-    background: url(virginia-image-320h.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
     transition: 0.6s;
+    opacity: 0.85;
 }
 
 .virginia-link-text {
@@ -315,14 +306,6 @@ body {
         text-align: right;
     }
 
-    .pivo-link:hover {
-        background: url(pivo-image-320h.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50vh;
-        transition: 0.6s;
-    }
-
     .pivo-link-text {
         text-align: center;
         color: #ff8d1c;
@@ -330,22 +313,6 @@ body {
         margin-top: 130px;
         margin-right: 150px;
         line-height: 10px;
-    }
-
-    .hawea-link:hover {
-        background: url(hawea-image-320h.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50vh;
-        transition: 0.6s;
-    }
-
-    .virginia-link:hover {
-        background: url(virginia-image-320h.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50vh;
-        transition: 0.6s;
     }
 
     .home-page-form > textarea {
@@ -432,14 +399,6 @@ body {
         height: 50vh;
     }
 
-    .pivo-link:hover {
-        background: url(pivo-image2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50vh;
-        transition: 0.6s;
-    }
-
     .pivo-link-text {
         text-align: center;
         color: #ff8d1c;
@@ -458,14 +417,6 @@ body {
         height: 50vh;
     }
 
-    .hawea-link:hover {
-        background: url(hawea-image2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50vh;
-        transition: 0.6s;
-    }
-
     .virginia-link {
         display: flex;
         justify-content: center;
@@ -473,14 +424,6 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         height: 50vh;
-    }
-
-    .virginia-link:hover {
-        background: url(virginia-image2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50vh;
-        transition: 0.6s;
     }
 
     .home-page-contato {
@@ -612,14 +555,6 @@ body {
         height: 70vh;
     }
 
-    .pivo-link:hover {
-        background: url(pivo-image2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 70vh;
-        transition: 0.6s;
-    }
-
     .pivo-link-text {
         text-align: center;
         color: #ff8d1c;
@@ -639,14 +574,6 @@ body {
         height: 70vh;
     }
 
-    .hawea-link:hover {
-        background: url(hawea-image2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 70vh;
-        transition: 0.6s;
-    }
-
     .hawea-link-text {
         font-family: "Mulish", sans-serif;
         margin-top: 360px;
@@ -660,14 +587,6 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         height: 70vh;
-    }
-
-    .virginia-link:hover {
-        background: url(virginia-image2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 70vh;
-        transition: 0.6s;
     }
 
     .virginia-link-text {
